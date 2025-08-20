@@ -1,0 +1,65 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor único */
+.contenedor {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #ff4081;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Subtítulos */
+h2 {
+    color: #7c4dff;
+    border-bottom: 2px dashed #b388ff;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* Listas */
+ul, ol {
+    text-align: left;
+    margin: 15px auto;
+    max-width: 500px;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ff5722;
+    text-shadow: 0 0 5px #ff8a65;
+    transform: scale(1.05);
+}
+
+/* Animación del fondo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
